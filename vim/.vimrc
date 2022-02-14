@@ -76,6 +76,7 @@ Plug 'lyuts/vim-rtags'
 Plug 'https://github.com/ctrlpvim/ctrlp.vim.git'
 Plug 'mbbill/undotree'
 Plug 'dracula/vim', { 'as': 'dracula' }
+
 call plug#end()
 
 syntax enable
