@@ -76,8 +76,11 @@ Plug 'lyuts/vim-rtags'
 Plug 'https://github.com/ctrlpvim/ctrlp.vim.git'
 Plug 'mbbill/undotree'
 Plug 'dracula/vim', { 'as': 'dracula' }
-
+Plug 'itchyny/lightline.vim'
 call plug#end()
 
 syntax enable
 colorscheme dracula
+let g:lightline = {
+      \ 'colorscheme': 'one',
+      \ }
