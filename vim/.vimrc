@@ -65,8 +65,6 @@ let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 
-let g:syntastic_swift_checkers = ['swiftpm', 'swiftlint']
-
 call plug#begin('~/.vim/plugged')
 Plug 'preservim/nerdtree'
 Plug 'morhetz/gruvbox'
@@ -78,7 +76,6 @@ Plug 'lyuts/vim-rtags'
 Plug 'https://github.com/ctrlpvim/ctrlp.vim.git'
 Plug 'mbbill/undotree'
 Plug 'dracula/vim', { 'as': 'dracula' }
-Plug 'https://github.com/keith/swift.vim.git'
 call plug#end()
 
 syntax enable
