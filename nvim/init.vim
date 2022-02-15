@@ -10,6 +10,7 @@ if !1 | finish | endif
 
 set nocompatible
 set number
+set relativenumber
 syntax enable
 set fileencodings=utf-8,sjis,euc-jp,latin
 set encoding=utf-8
@@ -23,9 +24,13 @@ set cmdheight=1
 set laststatus=2
 set scrolloff=10
 set expandtab
+set colorcolumn=80
+set signcolumn=yes
 "let loaded_matchparen = 1
 set shell=fish
 set backupskip=/tmp/*,/private/tmp/*
+set undodir=/.nvim/undodir
+set ruler
 
 " incremental substitution (neovim)
 if has('nvim')
@@ -48,7 +53,7 @@ set smarttab
 " indents
 filetype plugin indent on
 set shiftwidth=2
-set tabstop=2
+set tabstop=2 softtabstop=2
 set ai "Auto indent
 set si "Smart indent
 set nowrap "No Wrap lines

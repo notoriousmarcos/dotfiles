@@ -13,8 +13,21 @@ nnoremap - <C-x>
 " Delete a word backwards
 nnoremap dw vb"_d
 
+" Search
+map <Space> /
+
+autocmd! BufWritePost {*.vim} source %
+
 " Select all
 nmap <C-a> gg<S-v>G
+
+" Move lines
+nnoremap <down> :m .+1<CR>==
+nnoremap <up> :m .-2<CR>==
+inoremap <down> <Esc>:m .+1<CR>==gi
+inoremap <up> <Esc>:m .-2<CR>==gi
+vnoremap <down> :m '>+1<CR>gv=gv
+vnoremap <up> :m '<-2<CR>gv=gv
 
 " Save with root permission
 command! W w !sudo tee > /dev/null %
@@ -45,6 +58,7 @@ nmap <Tab> :tabnext<Return>
 " Split window
 nmap ss :split<Return><C-w>w
 nmap sv :vsplit<Return><C-w>w
+
 " Move window
 nmap <Space> <C-w>w
 map s<left> <C-w>h
@@ -56,6 +70,7 @@ map sk <C-w>k
 map sj <C-w>j
 map sl <C-w>l
 map sq <C-w>q
+
 " Resize window
 nmap <C-w><left> <C-w><
 nmap <C-w><right> <C-w>>
