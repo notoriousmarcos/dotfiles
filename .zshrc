@@ -85,6 +85,9 @@ plugins=(
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
+alias vim="nvim"
+alias vi="nvim"
+alias oldvim="nvim"
 
 # export MANPATH="/usr/local/man:$MANPATH"
 
