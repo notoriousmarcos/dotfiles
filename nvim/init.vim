@@ -133,9 +133,6 @@ if exists("&termguicolors") && exists("&winblend")
   set pumblend=5
   set background=dark
   colorscheme dracula
-  let g:lightline = {
-        \ 'colorscheme': 'dracula',
-        \ }
 endif
 
 "}}}
