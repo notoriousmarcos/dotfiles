@@ -1,4 +1,5 @@
-local status, autopairs = pcall(require, "nvim-autopairs")
+local status, autopairs, Rule = pcall(require, "nvim-autopairs")
+local Rule   = require'nvim-autopairs.rule'
 if (not status) then return end
 
 autopairs.setup({
